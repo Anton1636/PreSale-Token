@@ -18,11 +18,11 @@ module.exports = {
 		hardhat: {
 			chainId: 1337,
 		},
-		polygon: {
+		holesky: {
 			url: process.env.NETWORK_RPC_URL || process.env.NETWORK_RPC_URL,
 			accounts:
 				process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-			chainId: 137,
+			chainId: 17000,
 		},
 	},
 	paths: {
