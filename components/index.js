@@ -10,7 +10,7 @@ import FullWidthBanner from './global/FullWidthBanner'
 import CustomConnectButton from './global/CustomConnectButton'
 import Dashboard from './Dashboard'
 import TokenDocumentation from './TokenDocumentation'
-import Transactions from './Transactions'
+import Transaction from './Transaction'
 import AdminFunctions from './admin/AdminFunctions'
 import TokenSale from './TokenSale'
 import AdminOverview from './admin/AdminOverview'
@@ -33,7 +33,7 @@ export {
 	CustomConnectButton,
 	Dashboard,
 	TokenDocumentation,
-	Transactions,
+	Transaction,
 	AdminFunctions,
 	TokenSale,
 	AdminOverview,

@@ -96,17 +96,17 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 						{
 							icon: <FiActivity className='text-fuchsia-500' />,
 							label: 'AI',
-							href: 'https://linktum.gitbook.io/linktum',
+							href: '/',
 						},
 						{
 							icon: <FiCpu className='text-indigo-500' />,
 							label: 'AIVM',
-							href: 'https://linktum.gitbook.io/linktum/linktum-docs/quickstart',
+							href: '/',
 						},
 						{
 							icon: <FiLayers className='text-fuchsia-500' />,
 							label: 'Framework',
-							href: 'https://linktum.gitbook.io/linktum/linktum-docs',
+							href: '/',
 						},
 					],
 				},
@@ -116,7 +116,7 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 						{
 							icon: <FiCode className='text-fuchsia-500' />,
 							label: 'How To Buy',
-							href: 'https://linktum.gitbook.io/linktum/linktum-docs/publish-your-docs',
+							href: '/',
 						},
 						{
 							icon: <FiCompass className='text-indigo-500' />,
@@ -126,7 +126,7 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 						{
 							icon: <FiMap className='text-fuchsia-500' />,
 							label: 'Create Wallet',
-							href: 'https://linktum.gitbook.io/linktum/linktum-docs/publish-your-docs/create-a-wallet',
+							href: '/',
 						},
 					],
 				},
@@ -136,17 +136,17 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 						{
 							icon: <FiFileText className='text-indigo-500' />,
 							label: 'Token Documentation',
-							href: 'https://linktum.gitbook.io/linktum/tokenomics',
+							href: '/',
 						},
 						{
 							icon: <FiBook className='text-fuchsia-500' />,
 							label: 'Referral',
-							href: 'https://linktum.gitbook.io/linktum/referral',
+							href: '/',
 						},
 						{
 							icon: <FiCompass className='text-indigo-500' />,
 							label: 'Audits',
-							href: 'https://linktum.gitbook.io/linktum/audits',
+							href: '/',
 						},
 					],
 				},
@@ -154,9 +154,9 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 			featuredBox: {
 				title: 'Join Our Community',
 				description:
-					'Be part of the Linktum revolution and help shape the future of AI-driven blockchain.',
+					'Be part of the AI revolution and help shape the future of AI-driven blockchain.',
 				linkText: 'Join Discord',
-				linkUrl: 'https://discord.gg/hCEy5vREwr',
+				linkUrl: 'https://github.com/Anton1636?tab=repositories',
 				bgClass: isDarkMode ? 'bg-indigo-500/10' : 'bg-indigo-100/60',
 			},
 		},
@@ -169,17 +169,17 @@ const HeaderHome = ({ isDarkMode, toggleDarkMode }) => {
 						{
 							icon: <FiFileText className='text-fuchsia-500' />,
 							label: 'Whitepaper',
-							href: 'https://linktum.gitbook.io/linktum/linktum-docs/quickstart',
+							href: '/',
 						},
 						{
 							icon: <FiMap className='text-indigo-500' />,
 							label: 'Import Token',
-							href: 'https://linktum.gitbook.io/linktum/import-token',
+							href: '/',
 						},
 						{
 							icon: <FiBook className='text-fuchsia-500' />,
 							label: 'Documentation',
-							href: 'https://linktum.gitbook.io/linktum/import-token',
+							href: '/',
 						},
 					],
 				},
