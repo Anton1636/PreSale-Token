@@ -1,40 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# MyToken - Token Sale dApp
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+**MyToken** is a decentralized application (dApp) built for a secure and transparent **token sale (ICO)** process on the **Ethereum blockchain**. The current sale is in **Stage 1** with early bird pricing and limited availability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+With MyToken, you can:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Participate in Pre-sale** and purchase tokens using ETH
+- **Track current token price** and stage progress
+- **Easily connect your wallet (MetaMask)** for seamless transactions
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## ✨ Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- 🔗 **Web3 Integration** – Connect wallet via MetaMask
+- ⚡ **Real-time Pricing** – Live token price and stage progress
+- 🔒 **Secure Transactions** – Smart contract based token distribution
+- 🌐 **Responsive UI** – Built for a smooth user experience
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** React.js, Tailwind CSS
+- **Blockchain:** Solidity (ERC-20 token standard)
+- **Web3 Integration:** ethers.js / web3.js
+- **Network:** Ethereum Testnet (Holesky)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔥 Token Sale Details
 
-## Deploy on Vercel
+- **Stage:** 1 (Pre-sale)
+- **Current Price:** `0.01 ETH` per `1 MTL`
+- **Next Price:** `0.05 ETH`
+- **Total Raised:** `2.10 ETH`
+- **Limited Offer:** Act before the price increases!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 📸 Screenshot
+
+![MyToken dApp Screenshot](./public/screenshot.png)
+
+---
+
+## 🧩 How to Use
+
+1. **Connect your MetaMask wallet**
+2. **Enter amount of ETH** you want to contribute
+3. Click **Pay With ETH**
+4. Add **MyToken (MTL)** to MetaMask
+5. You're done! Tokens will be transferred to your wallet after confirmation
+
+---
+
+## 📖 Installation
+
+Clone the repository and install dependencies:  
+\`\`\`bash
+git clone https://github.com/Anton1636/PreSale-Token.git
+cd mytoken-sale
+npm install
+\`\`\`
+
+Run the development server:  
+\`\`\`bash
+npm start
+\`\`\`
+
+---
+
+## 🔐 Smart Contract
+
+- **Token Standard:** ERC-20
+- **Network:** Holesky Testnet
+- **Contract Address:** `0x8d...2911`
+
+---
+
+## ✅ To-Do
+
+- [ ] Add Multi-Stage Sale Logic
+- [ ] Implement Token Claiming Feature
+- [ ] Add Dark/Light Mode Toggle
+- [ ] Deployment to Mainnet
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – feel free to use and modify.

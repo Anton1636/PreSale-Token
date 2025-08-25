@@ -88,13 +88,15 @@ export const ToastProvider = ({ children }) => {
 		return toast.error(message, {
 			style: {
 				...TOAST_STYLE.common,
-				...TOAST_STYLE.failed,
+				...TOAST_STYLE.info,
 			},
 			duration: 4000,
 		})
 	}
 
 	const updateToast = (id, state, message) => {
+		if (!id) return
+
 		toast.dismiss(id)
 
 		switch (state) {

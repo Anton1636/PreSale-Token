@@ -48,8 +48,7 @@ export const handleTransactionError = (
 	}
 
 	return {
-		message,
-		errorMessage,
+		message: errorMessage,
 		code: errorCode,
 	}
 }

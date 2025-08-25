@@ -48,7 +48,7 @@ export const Web3Provider = ({ children }) => {
 		totalSold: '0',
 	})
 
-	const [tokenBalance, setTokenBalance] = useState({
+	const [tokenBalances, setTokenBalances] = useState({
 		usermtkBalance: '0',
 		contractEthBalance: null,
 		totalSupply: null,
@@ -92,6 +92,9 @@ export const Web3Provider = ({ children }) => {
 					currentProvider
 				)
 				const info = await readonlyContract.getContractInfo()
+
+				console.log('START --------')
+
 				const tokenDecimals = parseInt(info.tokenDecimals) || 18
 
 				setContractInfo({
@@ -123,7 +126,7 @@ export const Web3Provider = ({ children }) => {
 						tokenContract.totalSupply(),
 					])
 
-					setTokenBalance({
+					setTokenBalances(prev => ({
 						...prev,
 						usermtkBalance: ethers.utils.formatUnits(
 							userTokenBalance,
@@ -137,7 +140,7 @@ export const Web3Provider = ({ children }) => {
 							info.tokenBalance,
 							tokenDecimals
 						),
-					})
+					}))
 				}
 				setGlobalLoad(false)
 			} catch (err) {
@@ -155,7 +158,7 @@ export const Web3Provider = ({ children }) => {
 
 		try {
 			const ethValue = ethers.utils.parseEther(ethAmount)
-			const tx = await contract.buyTokens({ value: ethValue })
+			const tx = await contract.buyToken({ value: ethValue })
 
 			notify.update(toastId, 'Processing', 'Waiting for confirmation')
 
@@ -439,7 +442,7 @@ export const Web3Provider = ({ children }) => {
 		isConnected: !!address && !!contract,
 		isConnecting,
 		contractInfo,
-		tokenBalance,
+		tokenBalances,
 		error,
 		reCall,
 		globalLoad,
